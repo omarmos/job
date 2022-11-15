@@ -4,6 +4,8 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -7584,7 +7586,7 @@ header .logo img {
   header .logo img {
   padding: 0;
   margin-left: 0 auto;
-  max-height: 80px;
+  max-height: 70px;
   justify-content: center;
   z-index: 0;
 }
@@ -7593,6 +7595,83 @@ header .logo img {
 
 /* logo */
 
+
+/* Ribbon */
+header .ribbon img {
+  position: absolute;
+  padding: 0;
+  margin: -4% -40%;
+  max-width: 90px;
+
+}
+
+@media (max-width: 768px) {
+  header .ribbon img {
+  margin: -15% -48%;
+  max-height: 70px;
+  
+}
+}
+
+/* Ribbon */
+
+
+.rounded-shadow{
+
+
+box-shadow: #007bff;
+border-radius: 20%;
+
+
+}
+
+/*--------------------------------------------------------------
+# Clients
+--------------------------------------------------------------*/
+.clients {
+  background: #f3f9fd;
+  padding: 10px 0;
+  text-align: center;
+  background: linear-gradient(-45deg, rgba(0, 0, 0, 0.089), rgba(255,255,255,0.25));
+  box-shadow:  6px 6px 8px #d9d9d9,
+  -6px -6px 8px #e7e7e7;
+margin: 2% auto;
+}
+
+.clients .col-lg-2 {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.clients img {
+ width: 50%;
+ filter: grayscale(100);
+ transition: all 0.4s ease-in-out;
+ display: inline-block;
+ padding: 10px 0;
+}
+
+.clients img:hover {
+ filter: none;
+ transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+ .clients img {
+   width: 40%;
+ }
+}
+
+@media (max-width: 575px) {
+ .clients img {
+   width: 30%;
+ }
+}
+
+/*--------------------------------------------------------------
+# Clients
+--------------------------------------------------------------*/
 
 
 /*--------------------------------------------------------------
@@ -8319,7 +8398,9 @@ color: #007bff;
       color: #ccd3e0; }
 
 .aside-stretch {
-  background: #4a5562 !important; }
+  background: #4a5562 !important;
+box-shadow:  6px 6px 8px #d9d9d9,
+             -6px -6px 8px #e7e7e7; }
   .aside-stretch:after {
     position: absolute;
     top: 0;
@@ -8606,6 +8687,18 @@ textarea.form-control {
 .ftco-counter .text {
   display: block;
   width: 100%; }
+
+
+  .ftco-counter h1 {
+    font-weight:600;}
+
+    .ftco-counter .img-container img {
+      border-radius:20% ;}
+
+    .ftco-counter h5 {
+      color: #0096FB;}
+
+
   .ftco-counter .text strong.number {
     font-weight: 300;
     font-size: 30px;
